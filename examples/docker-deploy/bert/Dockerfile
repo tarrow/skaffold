@@ -10,3 +10,4 @@ FROM alpine:3.10
 ENV GOTRACEBACK=single
 CMD ["./app"]
 COPY --from=builder /app .
+COPY test .
